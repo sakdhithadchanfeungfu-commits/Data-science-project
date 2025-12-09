@@ -82,4 +82,21 @@ Three critical data quality issues were identified during the exploration phase 
 * **Combined Risks:** Does having multiple risk factors increase the risk compared to just one?
 
 
+## 💡 Findings and Insights
+
+Based on our statistical analysis and data visualization, we identified several critical patterns regarding heart disease risk:
+
+### 1. Demographic Factors: Age vs. Gender
+* **Age is the Dominant Driver:** Age has a significant and consistent impact on CHD risk across all groups. The "Risk" group is consistently older than the "No Risk" group.
+* **Gender Impact is Minimal:** Unlike age, gender shows minimal impact on heart disease risk. Age proves to be the primary determinant for both men and women.
+
+### 2. Medical Risk Factors
+* **Glucose vs. Cholesterol:** High glucose levels were identified as a dominant risk factor, significantly outweighing the impact of high cholesterol.
+* **The Glucose-BP Connection:** Elevated blood glucose is strongly associated with higher systolic blood pressure (approx. 141 mmHg vs. 131 mmHg), confirming a link to increased cardiovascular stress.
+* **BMI Trends:** There is a clear upward trend in risk associated with BMI. The 10-year CHD risk peaks at nearly **20% for the Obese group**, compared to approximately **12% for those with normal weight**.
+
+### 3. Combined Risk Effect
+* **The Multiplier Effect:** Having multiple risk factors simultaneously results in the highest probability of CHD, significantly exceeding the risk associated with any single factor alone.
+
+
 
