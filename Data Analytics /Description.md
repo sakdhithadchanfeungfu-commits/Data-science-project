@@ -62,3 +62,9 @@ To ensure the accuracy of our analysis and model, the following preprocessing st
 3.  **Handling Class Imbalance:**
     * The dataset was imbalanced (fewer "Risk" cases than "No Risk").
     * Applied **SMOTE (Synthetic Minority Over-sampling Technique)** and **Oversampling** to balance the target classes for better model performance.
+### 🚩 Problems Identified
+Three critical data quality issues were identified during the exploration phase that required preprocessing:
+
+1.  **Missing Values:** Several records contained null values that needed to be dropped or imputed.
+2.  **Extreme Outliers:** Significant outliers were observed in medical variables, which could skew the analysis.
+3.  **Imbalanced Target:** The dataset shows a class imbalance, with significantly fewer "Risk" cases compared to "No Risk" cases.
