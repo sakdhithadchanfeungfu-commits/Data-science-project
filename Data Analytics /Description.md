@@ -59,9 +59,7 @@ To ensure the accuracy of our analysis and model, the following preprocessing st
     * Converted numerical codes into human-readable labels for analysis (e.g., mapping `Sex` to Male/Female, `TenYearCHD` to Risk/No Risk).
 2.  **Handling Missing Values:**
     * Identified missing values (NaNs) in the dataset and removed the corresponding rows to maintain data integrity.
-3.  **Handling Class Imbalance:**
-    * The dataset was imbalanced (fewer "Risk" cases than "No Risk").
-    * Applied **SMOTE (Synthetic Minority Over-sampling Technique)** and **Oversampling** to balance the target classes for better model performance.
+
 ### 🚩 Problems Identified
 Three critical data quality issues were identified during the exploration phase that required preprocessing:
 
