@@ -68,3 +68,18 @@ Three critical data quality issues were identified during the exploration phase 
 1.  **Missing Values:** Several records contained null values that needed to be dropped or imputed.
 2.  **Extreme Outliers:** Significant outliers were observed in medical variables, which could skew the analysis.
 3.  **Imbalanced Target:** The dataset shows a class imbalance, with significantly fewer "Risk" cases compared to "No Risk" cases.
+
+## ❓ Key Questions & Hypotheses
+
+### 1. General Information
+* **Age Impact:** Does age significantly impact the 10-year CHD risk?
+* **Gender Differences:** Does the impact of age on CHD risk differ between genders?
+
+### 2. Medical Data Factors
+* **Dominant Factor:** Which is the dominant risk factor: Glucose or Cholesterol?
+* **Glucose & BP:** Is elevated blood glucose associated with higher systolic blood pressure?
+* **BMI Trend:** Does the BMI category (Underweight to Obese) show a clear trend in CHD risk?
+* **Combined Risks:** Does having multiple risk factors increase the risk compared to just one?
+
+
+
