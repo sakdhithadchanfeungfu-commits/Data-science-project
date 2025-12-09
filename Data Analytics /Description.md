@@ -17,46 +17,48 @@ The analysis aims to answer critical questions regarding heart disease risk fact
 
 ---
 
-## 📊 Dataset Overview
+## 📂 Data Description
 
-The dataset used in this project is from the **Framingham Heart Study**, an ongoing cardiovascular study on residents of Framingham, Massachusetts. [cite_start]It is publicly available on Kaggle and contains over 4,000 patient records[cite: 83, 98, 100].
+The dataset used in this analysis is the **Framingham Heart Study** dataset, obtained from Kaggle. It includes health records of residents from Framingham, Massachusetts, consisting of **4,238 records** and **15 attributes**.
 
-* [cite_start]**Source:** [Kaggle - Heart Disease Prediction](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data) [cite: 83]
-* [cite_start]**Total Records:** 4,238 records (before cleaning) [cite: 123]
-* [cite_start]**Attributes:** 15 clinical, demographic, and behavioral features [cite: 100]
+* **Source:** [Kaggle - Heart Disease Prediction Using Logistic Regression](https://www.kaggle.com/datasets/dileep070/heart-disease-prediction-using-logistic-regression/data)
+* **Target Variable:** `TenYearCHD` (10-year risk of coronary heart disease)
+    * `0` = No Risk
+    * `1` = Risk
 
-### 📖 Data Dictionary
+### 📝 Data Dictionary
 
-The classification goal is to predict the **10-year risk of future coronary heart disease (CHD)**.
+The variables are categorized into four main groups:
 
-| Category | Variable | Description |
+| Category | Variable Name | Description |
 | :--- | :--- | :--- |
-| **Target** | `TenYearCHD` | [cite_start]10-year risk of coronary heart disease (1 = Risk, 0 = No Risk) [cite: 73] |
-| **Demographic** | `age` | [cite_start]Age of the patient [cite: 75] |
-| | `sex` | [cite_start]Gender (Male / Female) [cite: 75] |
-| | `education` | [cite_start]Educational background [cite: 75] |
-| **Behavioral** | `currentSmoker` | [cite_start]Whether the patient is a current smoker [cite: 77] |
-| | `cigsPerDay` | [cite_start]Number of cigarettes smoked per day [cite: 77] |
-| **Medical History** | `BPMeds` | [cite_start]Whether the patient is on blood pressure medication [cite: 79] |
-| | `prevalentStroke` | [cite_start]History of stroke [cite: 79] |
-| | `prevalentHyp` | [cite_start]History of hypertension [cite: 79] |
-| | `diabetes` | [cite_start]History of diabetes [cite: 79] |
-| **Current Health** | `totChol` | [cite_start]Total Cholesterol level [cite: 80] |
-| | `sysBP` | [cite_start]Systolic Blood Pressure [cite: 80] |
-| | `diaBP` | [cite_start]Diastolic Blood Pressure [cite: 80] |
-| | `BMI` | [cite_start]Body Mass Index [cite: 80] |
-| | `heartRate` | [cite_start]Heart rate [cite: 80] |
-| | `glucose` | [cite_start]Glucose level [cite: 80] |
+| **Target** | `TenYearCHD` | 10-year risk of coronary heart disease (Binary: 0/1) |
+| **Demographic** | `male` | Gender (0 = Female, 1 = Male) |
+| | `age` | Age of the patient |
+| | `education` | Education level |
+| **Behavioral** | `currentSmoker` | Whether the patient is a current smoker (0/1) |
+| | `cigsPerDay` | Number of cigarettes smoked per day |
+| **Medical History** | `BPMeds` | Whether the patient is on blood pressure medication |
+| | `prevalentStroke` | History of stroke |
+| | `prevalentHyp` | History of hypertension |
+| | `diabetes` | History of diabetes |
+| **Current Health** | `totChol` | Total cholesterol level |
+| | `sysBP` | Systolic blood pressure |
+| | `diaBP` | Diastolic blood pressure |
+| | `BMI` | Body Mass Index |
+| | `heartRate` | Heart rate |
+| | `glucose` | Glucose level |
 
 ---
 
-## ⚙️ Data Cleaning & Preprocessing
+## 🧹 Data Cleaning & Preprocessing
 
-[cite_start]From our initial inspection, we identified three critical issues: **Missing Values**, **Extreme Outliers**, and an **Imbalanced Target**[cite: 124].
+To ensure the accuracy of our analysis and model, the following preprocessing steps were performed:
 
-### Key Steps Taken:
-1.  [cite_start]**Data Integration:** Merged lookup tables to translate numerical codes (e.g., 0, 1) into human-readable labels like "Male/Female" and "No Risk/Risk" for clearer analysis[cite: 117].
-2.  [cite_start]**Handling Missing Values:** Rows containing missing values (NaNs) were dropped to ensure data quality[cite: 118].
-3.  **Imbalance Handling:** The target variable `TenYearCHD` was imbalanced. [cite_start]We applied **SMOTE (Synthetic Minority Over-sampling Technique)** and **Oversampling** to balance the dataset before training the model[cite: 118].
-
----
+1.  **Data Integration & Mapping:**
+    * Converted numerical codes into human-readable labels for analysis (e.g., mapping `Sex` to Male/Female, `TenYearCHD` to Risk/No Risk).
+2.  **Handling Missing Values:**
+    * Identified missing values (NaNs) in the dataset and removed the corresponding rows to maintain data integrity.
+3.  **Handling Class Imbalance:**
+    * The dataset was imbalanced (fewer "Risk" cases than "No Risk").
+    * Applied **SMOTE (Synthetic Minority Over-sampling Technique)** and **Oversampling** to balance the target classes for better model performance.
