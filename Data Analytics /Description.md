@@ -2,9 +2,9 @@
 
 ## 📌 Introduction
 
-[cite_start]Cardiovascular diseases (CVDs) are currently the leading cause of death globally, accounting for approximately **19.41 million deaths annually**[cite: 15, 19, 56]. Despite being a major global health crisis, many of these cases are preventable through early detection and lifestyle management.
+Cardiovascular diseases (CVDs) are currently the leading cause of death globally, accounting for approximately **19.41 million deaths annually**[cite: 15, 19, 56]. Despite being a major global health crisis, many of these cases are preventable through early detection and lifestyle management.
 
-[cite_start]This project, developed as part of the **DS512/513 Data Analytics** course [cite: 5][cite_start], focuses on analyzing the **Framingham Heart Study dataset**[cite: 63, 83]. [cite_start]Instead of solely relying on prediction, our primary goal is to derive actionable intelligence by identifying concrete **"Risk Indicators"**[cite: 51].
+This project, developed as part of the **DS512/513 Data Analytics** course [cite: 5][cite_start], focuses on analyzing the **Framingham Heart Study dataset**[cite: 63, 83]. [cite_start]Instead of solely relying on prediction, our primary goal is to derive actionable intelligence by identifying concrete **"Risk Indicators"**[cite: 51].
 
 ### 🎯 Project Objectives
 
